@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GEEVO Korea | 무균시험 밀폐 캐니스터 · SM86 무균시험 시스템</title>
-<meta name="description" content="GEEVO(吉沃) 무균시험 밀폐 캐니스터와 SM86 무균시험 시스템. 시료 유형별 NS01 캐니스터, 감마선 이중포장, IOQ 밸리데이션 문서. KP·USP·EP·JP 규격. 국내 공급 글로벌트레이딩.">
-<meta name="keywords" content="무균시험, Sterility Test, 밀폐 캐니스터, SM86, GEEVO, 吉沃, NS01, 막여과, 아이솔레이터, 미생물한도시험, 글로벌트레이딩">
+<meta name="description" content="GEEVO(吉沃) 무균시험 밀폐 캐니스터와 SM86 무균시험 시스템. 시료 유형별 NS01 캐니스터, 감마선 이중포장, IOQ 밸리데이션 문서. KP·USP·EP·JP 규격, 멤브레인 여과법. 국내 공급 글로벌트레이딩.">
+<meta name="keywords" content="무균시험, Sterility Test, 밀폐 캐니스터, SM86, GEEVO, 吉沃, NS01, 막여과, 아이솔레이터, 미생물한도시험, USP 71, 글로벌트레이딩">
 <meta name="theme-color" content="#0B1120">
 <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
 <meta property="og:type" content="website">
@@ -34,7 +34,7 @@
   --ease-spring:cubic-bezier(.16,1,.3,1); --ease-out:cubic-bezier(.4,0,.2,1);
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:128px}
 body{font-family:"Pretendard","Inter","Noto Sans KR","Malgun Gothic",sans-serif;color:var(--ink-1);background:var(--bg-1);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
 img{max-width:100%;height:auto;display:block}
 a{color:var(--brand-1);text-decoration:none}
@@ -45,19 +45,19 @@ button{font:inherit;cursor:pointer;background:none;border:0;color:inherit}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--brand-1)}
 .eyebrow::before{content:"";width:24px;height:1px;background:var(--brand-1)}
 .eyebrow.on-dark{color:var(--brand-3)}.eyebrow.on-dark::before{background:var(--brand-3)}
+.eyebrow.center{justify-content:center}
 h1,h2,h3,h4{font-weight:700;letter-spacing:-.02em;color:var(--ink-1);line-height:1.15}
 .h-display{font-size:clamp(38px,5.4vw,66px);font-weight:800;letter-spacing:-.035em;line-height:1.06}
 .h-section{font-size:clamp(27px,3.3vw,42px);font-weight:800;letter-spacing:-.028em;line-height:1.12}
 .lead{font-size:clamp(16px,1.4vw,19px);color:var(--ink-3);line-height:1.7}
 
-/* announce */
 .announce{background:var(--ink-1);color:#fff;font-size:13px;padding:9px 0;text-align:center;letter-spacing:.01em}
 .announce b{color:var(--brand-3);font-weight:700}
 
 /* header */
-.header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.86);backdrop-filter:blur(14px) saturate(1.2);border-bottom:1px solid var(--line-1);transition:box-shadow .3s}
+.header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.88);backdrop-filter:blur(14px) saturate(1.2);border-bottom:1px solid var(--line-1);transition:box-shadow .3s}
 .header.scrolled{box-shadow:var(--s-2)}
-.header-inner{display:flex;align-items:center;justify-content:space-between;min-height:72px;gap:32px}
+.header-inner{display:flex;align-items:center;justify-content:space-between;min-height:70px;gap:32px}
 .brand{display:inline-flex;align-items:center;gap:11px}
 .brand-mark{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--brand-1),var(--brand-2));color:#fff;display:inline-flex;align-items:center;justify-content:center;box-shadow:var(--s-2)}
 .brand-mark svg{width:22px;height:22px}
@@ -65,7 +65,7 @@ h1,h2,h3,h4{font-weight:700;letter-spacing:-.02em;color:var(--ink-1);line-height
 .brand-txt .n b{color:var(--brand-1)}
 .brand-txt .s{font-size:11.5px;color:var(--ink-4);font-weight:600;margin-top:1px}
 nav.pri>ul{list-style:none;display:flex;gap:2px;align-items:center}
-nav.pri>ul>li>a{padding:22px 14px;color:var(--ink-2);font-weight:500;font-size:14.5px;border-radius:8px;transition:color .18s}
+nav.pri>ul>li>a{padding:22px 13px;color:var(--ink-2);font-weight:500;font-size:14.5px;border-radius:8px;transition:color .18s}
 nav.pri>ul>li>a:hover{color:var(--brand-1)}
 .h-cta{display:inline-flex;align-items:center;gap:6px;background:var(--ink-1);color:#fff!important;padding:11px 20px!important;border-radius:999px;font-weight:600;font-size:14px;box-shadow:var(--s-2);transition:transform .18s var(--ease-spring),background .18s}
 .h-cta:hover{background:var(--brand-1);transform:translateY(-1px);box-shadow:var(--s-3)}
@@ -77,12 +77,23 @@ nav.pri>ul>li>a:hover{color:var(--brand-1)}
 .menu-btn.open svg .mid{opacity:0}
 .menu-btn.open svg .bot{transform:rotate(-45deg) translate(3px,-5px)}
 .menu-btn svg .line{transition:transform .2s var(--ease-spring),opacity .15s;transform-origin:center}
+
+/* sub anchor nav (benchmark: Tailin / Sartorius) */
+.subnav{position:sticky;top:70px;z-index:190;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-1)}
+.subnav-inner{display:flex;align-items:center;gap:4px;overflow-x:auto;scrollbar-width:none}
+.subnav-inner::-webkit-scrollbar{display:none}
+.subnav a{white-space:nowrap;padding:14px 14px;font-size:13.5px;font-weight:600;color:var(--ink-3);border-bottom:2px solid transparent;transition:color .18s,border-color .18s}
+.subnav a:hover{color:var(--brand-1)}
+.subnav a.active{color:var(--brand-1);border-color:var(--brand-1)}
+.subnav .sub-cta{margin-left:auto;color:var(--brand-1);font-weight:700}
+@media(max-width:940px){.subnav{top:64px}.subnav .sub-cta{display:none}}
+
 .mobile-drawer{display:none;position:fixed;top:0;right:0;width:min(320px,82vw);height:100vh;background:#fff;z-index:1000;padding:22px;box-shadow:var(--s-5);transform:translateX(100%);transition:transform .3s var(--ease-spring);overflow-y:auto}
 .mobile-drawer.open{transform:translateX(0)}
 .mobile-drawer-head{display:flex;justify-content:space-between;align-items:center;padding-bottom:18px;margin-bottom:8px;border-bottom:1px solid var(--line-1)}
 .mobile-drawer-head .brand-txt .n{font-size:18px}
 .mobile-drawer-close{width:36px;height:36px;font-size:20px;color:var(--ink-3);border-radius:8px}
-.mobile-drawer a{display:block;padding:14px 14px;color:var(--ink-1);font-weight:600;font-size:15.5px;border-radius:10px}
+.mobile-drawer a{display:block;padding:13px 14px;color:var(--ink-1);font-weight:600;font-size:15.5px;border-radius:10px}
 .mobile-drawer a:hover{background:var(--bg-3)}
 .mobile-drawer a .d{display:block;font-size:12px;color:var(--ink-4);font-weight:400;margin-top:2px}
 .mobile-drawer .m-cta{margin-top:14px;background:var(--ink-1);color:#fff;text-align:center;border-radius:12px}
@@ -94,7 +105,6 @@ nav.pri>ul>li>a:hover{color:var(--brand-1)}
   .mobile-drawer,.drawer-backdrop{display:block}
 }
 
-/* buttons */
 .btn{display:inline-flex;align-items:center;gap:8px;padding:15px 26px;border-radius:12px;font-weight:600;font-size:15px;text-decoration:none;border:1.5px solid transparent;transition:transform .18s var(--ease-spring),background .18s,border-color .18s,box-shadow .18s}
 .btn-primary{background:var(--ink-1);color:#fff;box-shadow:var(--s-2)}
 .btn-primary:hover{background:var(--brand-1);transform:translateY(-2px);box-shadow:var(--s-3)}
@@ -105,16 +115,16 @@ nav.pri>ul>li>a:hover{color:var(--brand-1)}
 .btn-outline-w{color:#fff;border-color:rgba(255,255,255,.4)}.btn-outline-w:hover{border-color:#fff;background:rgba(255,255,255,.08)}
 
 /* hero */
-.hero{position:relative;padding:88px 0 104px;background:radial-gradient(circle at 14% 18%,rgba(0,145,211,.07),transparent 46%),radial-gradient(circle at 92% 84%,rgba(14,124,134,.05),transparent 42%),linear-gradient(180deg,#fff 0%,var(--bg-2) 100%);overflow:hidden}
+.hero{position:relative;padding:76px 0 96px;background:radial-gradient(circle at 14% 18%,rgba(0,145,211,.07),transparent 46%),radial-gradient(circle at 92% 84%,rgba(14,124,134,.05),transparent 42%),linear-gradient(180deg,#fff 0%,var(--bg-2) 100%);overflow:hidden}
 .hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--line-1) 1px,transparent 1px),linear-gradient(90deg,var(--line-1) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse at 50% 28%,black,transparent 68%);opacity:.4;pointer-events:none}
 .hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.02fr .98fr;gap:64px;align-items:center}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--brand-4);color:var(--brand-1);padding:7px 14px 7px 9px;border-radius:999px;font-size:13px;font-weight:600;margin-bottom:22px;border:1px solid rgba(0,145,211,.16)}
 .hero-badge .dot{width:7px;height:7px;border-radius:50%;background:var(--success);box-shadow:0 0 0 3px rgba(16,185,129,.18)}
-.hero h1{margin-bottom:22px}
+.hero h1{margin-bottom:20px}
 .hero h1 .grad{background:linear-gradient(120deg,var(--brand-1) 0%,var(--accent-1) 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.hero .lead{margin-bottom:34px;max-width:560px}
-.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:40px}
-.hero-metrics{display:grid;grid-template-columns:repeat(3,1fr);padding-top:26px;border-top:1px solid var(--line-1)}
+.hero .lead{margin-bottom:30px;max-width:560px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:36px}
+.hero-metrics{display:grid;grid-template-columns:repeat(3,1fr);padding-top:24px;border-top:1px solid var(--line-1)}
 .hero-metrics .m{padding-right:22px}
 .hero-metrics .m+.m{padding-left:22px;border-left:1px solid var(--line-1)}
 .hero-metrics .n{font-family:Inter,sans-serif;font-weight:800;font-size:29px;color:var(--ink-1);letter-spacing:-.03em}
@@ -130,17 +140,24 @@ nav.pri>ul>li>a:hover{color:var(--brand-1)}
 .hero-chip .v{font-size:16px;color:var(--ink-1);font-weight:800;font-family:Inter,sans-serif}
 .hero-chip svg{width:26px;height:26px;color:var(--brand-1)}
 
+/* overview / authority intro */
+.overview{background:#fff;padding:64px 0}
+.overview-inner{max-width:940px;margin:0 auto;text-align:center}
+.overview p{font-size:clamp(17px,1.6vw,20px);color:var(--ink-2);line-height:1.72}
+.overview p b{color:var(--ink-1);font-weight:700}
+.overview .forms{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:26px}
+.overview .forms span{font-size:13px;font-weight:600;color:var(--ink-2);background:var(--bg-2);border:1px solid var(--line-1);padding:8px 15px;border-radius:999px}
+
 /* regulatory strip */
-.reg{background:var(--bg-2);border-block:1px solid var(--line-1);padding:38px 0}
-.reg-head{text-align:center;color:var(--ink-4);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:22px}
-.reg-logos{display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap}
-.reg-logos .r{font-family:Inter,sans-serif;font-weight:800;font-size:19px;color:var(--ink-3);letter-spacing:-.01em;padding:8px 18px;border:1px solid var(--line-1);border-radius:999px;background:#fff}
+.reg{background:var(--bg-2);border-block:1px solid var(--line-1);padding:34px 0}
+.reg-head{text-align:center;color:var(--ink-4);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:20px}
+.reg-logos{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap}
+.reg-logos .r{font-family:Inter,sans-serif;font-weight:800;font-size:18px;color:var(--ink-3);letter-spacing:-.01em;padding:8px 18px;border:1px solid var(--line-1);border-radius:999px;background:#fff}
 .reg-logos .r span{color:var(--brand-1)}
 
-/* section common */
-section{padding:104px 0}
-@media(max-width:768px){section{padding:72px 0}}
-.section-head{text-align:center;max-width:720px;margin:0 auto 56px}
+section{padding:96px 0}
+@media(max-width:768px){section{padding:68px 0}}
+.section-head{text-align:center;max-width:740px;margin:0 auto 52px}
 .section-head .eyebrow{margin-bottom:18px}
 .section-head h2{margin-bottom:15px}
 .section-head .lead{margin:0 auto}
@@ -162,24 +179,24 @@ section{padding:104px 0}
 .axis-card .badge{position:absolute;top:22px;right:22px;font-size:11px;font-weight:700;color:var(--brand-1);background:var(--brand-4);padding:5px 11px;border-radius:999px}
 .axis-card.dim .badge{color:var(--ink-4);background:var(--line-2)}
 
+/* workflow */
+.flow{background:var(--bg-2)}
+.flow-steps{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;counter-reset:s}
+.flow-step{position:relative;padding:24px 16px;background:#fff;border:1px solid var(--line-1);border-radius:16px}
+.flow-step::before{counter-increment:s;content:counter(s);display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:9px;background:var(--brand-1);color:#fff;font-family:Inter,sans-serif;font-weight:800;font-size:14px;margin-bottom:12px}
+.flow-step h4{font-size:14.5px;margin-bottom:5px}
+.flow-step p{font-size:12px;color:var(--ink-4);line-height:1.5}
+
 /* canister types */
-.types{background:var(--bg-2)}
+.types{background:#fff}
 .types-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
-.type-card{background:#fff;border:1px solid var(--line-1);border-radius:18px;padding:24px 20px;transition:transform .3s var(--ease-spring),box-shadow .3s,border-color .3s;position:relative}
+.type-card{background:var(--bg-2);border:1px solid var(--line-1);border-radius:18px;padding:24px 20px;transition:transform .3s var(--ease-spring),box-shadow .3s,border-color .3s;position:relative}
 .type-card:hover{transform:translateY(-5px);box-shadow:var(--s-3);border-color:var(--brand-3)}
 .type-card .model{font-family:Inter,sans-serif;font-weight:800;font-size:18px;color:var(--brand-1);letter-spacing:-.01em}
 .type-card.star{background:linear-gradient(180deg,var(--brand-4),#fff);border-color:var(--brand-3)}
 .type-card .star-tag{position:absolute;top:14px;right:14px;font-size:10px;font-weight:800;color:#fff;background:var(--brand-1);padding:3px 8px;border-radius:999px}
 .type-card h4{font-size:15px;margin:12px 0 6px}
 .type-card p{font-size:13px;color:var(--ink-4);line-height:1.55}
-
-/* workflow */
-.flow{background:#fff}
-.flow-steps{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;counter-reset:s}
-.flow-step{position:relative;padding:24px 16px;background:var(--bg-2);border:1px solid var(--line-1);border-radius:16px}
-.flow-step::before{counter-increment:s;content:counter(s);display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:9px;background:var(--brand-1);color:#fff;font-family:Inter,sans-serif;font-weight:800;font-size:14px;margin-bottom:12px}
-.flow-step h4{font-size:14.5px;margin-bottom:5px}
-.flow-step p{font-size:12px;color:var(--ink-4);line-height:1.5}
 
 /* strengths (dark) */
 .strong{background:var(--ink-1);color:#fff;position:relative;overflow:hidden}
@@ -188,32 +205,52 @@ section{padding:104px 0}
 .strong .section-head .lead{color:var(--ink-5)}
 .strong-inner{position:relative;z-index:2}
 .strong-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
-.strong-list{display:flex;flex-direction:column;gap:16px}
-.strong-item{display:flex;gap:18px;padding:22px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;transition:background .2s,transform .2s}
+.strong-list{display:flex;flex-direction:column;gap:14px}
+.strong-item{display:flex;gap:18px;padding:20px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;transition:background .2s,transform .2s}
 .strong-item:hover{background:rgba(255,255,255,.09);transform:translateX(4px)}
 .strong-item .num{font-family:Inter,sans-serif;font-weight:800;font-size:20px;color:var(--brand-3);flex-shrink:0;width:30px}
-.strong-item h4{color:#fff;font-size:17px;margin-bottom:5px}
+.strong-item h4{color:#fff;font-size:16.5px;margin-bottom:5px}
 .strong-item p{color:var(--ink-5);font-size:13.5px;line-height:1.6}
 .strong-photo{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:16px}
 .strong-photo img{width:100%;border-radius:12px;background:#fff}
 .strong-photo .cap{color:var(--ink-5);font-size:12.5px;margin-top:12px;text-align:center}
 
-/* lineup */
-.lineup{background:var(--bg-2)}
-.lineup-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.line-card{background:#fff;border:1px solid var(--line-1);border-radius:20px;padding:30px 28px;transition:transform .3s var(--ease-spring),box-shadow .3s,border-color .3s}
-.line-card:hover{transform:translateY(-5px);box-shadow:var(--s-4);border-color:var(--brand-3)}
-.line-card .k{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.08em;color:var(--brand-1);text-transform:uppercase}
-.line-card h3{font-size:20px;margin:8px 0 10px}
-.line-card p{color:var(--ink-3);font-size:14px;line-height:1.6;margin-bottom:14px}
-.line-card ul{list-style:none}
-.line-card li{font-size:13px;color:var(--ink-2);padding:5px 0 5px 20px;position:relative}
-.line-card li::before{content:"";position:absolute;left:0;top:11px;width:7px;height:7px;border-radius:50%;background:var(--brand-2)}
-.line-card.feat{grid-column:span 1;background:linear-gradient(165deg,var(--brand-4),#fff);border-color:var(--brand-3)}
+/* SPECIFICATIONS (benchmark: expert spec tables) */
+.specs{background:var(--bg-2)}
+.spec-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.spec-card{background:#fff;border:1px solid var(--line-1);border-radius:20px;overflow:hidden;box-shadow:var(--s-1)}
+.spec-card .sh{padding:22px 26px;border-bottom:1px solid var(--line-1);display:flex;align-items:center;justify-content:space-between;gap:12px;background:linear-gradient(180deg,#fff,var(--bg-2))}
+.spec-card .sh h3{font-size:19px}
+.spec-card .sh .tag{font-family:Inter,sans-serif;font-weight:800;font-size:12px;color:#fff;background:var(--brand-1);padding:5px 11px;border-radius:999px}
+.spec-tbl{width:100%;border-collapse:collapse}
+.spec-tbl tr{border-bottom:1px solid var(--line-2)}
+.spec-tbl tr:last-child{border-bottom:0}
+.spec-tbl th{text-align:left;font-size:13px;font-weight:600;color:var(--ink-4);padding:12px 26px;width:44%;vertical-align:top}
+.spec-tbl td{font-size:13.5px;font-weight:600;color:var(--ink-1);padding:12px 26px;font-family:"Pretendard",Inter,sans-serif}
+.spec-note{font-size:12px;color:var(--ink-4);margin-top:16px;text-align:center}
+
+/* COMPLIANCE (benchmark: standards citation) */
+.compliance{background:#fff}
+.comp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.comp-card{padding:26px 24px;border:1px solid var(--line-1);border-radius:18px;background:var(--bg-2);transition:transform .3s,box-shadow .3s,border-color .3s}
+.comp-card:hover{transform:translateY(-4px);box-shadow:var(--s-3);border-color:var(--brand-3)}
+.comp-card .std{font-family:Inter,sans-serif;font-weight:800;font-size:15px;color:var(--brand-1);margin-bottom:8px;letter-spacing:-.01em}
+.comp-card p{font-size:13.5px;color:var(--ink-3);line-height:1.6}
+
+/* RESOURCES (benchmark: document library) */
+.res{background:var(--bg-2)}
+.res-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.res-card{background:#fff;border:1px solid var(--line-1);border-radius:16px;padding:24px 22px;transition:transform .3s,box-shadow .3s,border-color .3s;display:flex;flex-direction:column;gap:10px}
+.res-card:hover{transform:translateY(-4px);box-shadow:var(--s-3);border-color:var(--brand-3)}
+.res-card .kind{font-family:Inter,sans-serif;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--brand-1)}
+.res-card h4{font-size:15.5px;line-height:1.4}
+.res-card p{font-size:12.5px;color:var(--ink-4);line-height:1.55;flex:1}
+.res-card .avail{font-size:12px;font-weight:600;color:var(--ink-3);display:inline-flex;align-items:center;gap:6px}
+.res-card .avail svg{width:15px;height:15px;color:var(--brand-1)}
 
 /* insight */
 .insight{background:#fff}
-.insight-card{background:linear-gradient(135deg,var(--ink-1),var(--ink-2));border-radius:26px;padding:56px 52px;color:#fff;position:relative;overflow:hidden}
+.insight-card{background:linear-gradient(135deg,var(--ink-1),var(--ink-2));border-radius:26px;padding:52px 48px;color:#fff;position:relative;overflow:hidden}
 .insight-card::before{content:"";position:absolute;top:-40%;right:-6%;width:420px;height:420px;background:radial-gradient(circle,rgba(0,145,211,.28),transparent 62%)}
 .insight-inner{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
 .insight h2{color:#fff;font-size:clamp(24px,2.8vw,34px);margin-bottom:16px}
@@ -221,7 +258,7 @@ section{padding:104px 0}
 .insight .pharm{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
 .insight .pharm span{font-family:Inter,sans-serif;font-weight:700;font-size:13px;color:#fff;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:8px 14px;border-radius:10px}
 .gap-table{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:16px;overflow:hidden}
-.gap-table .row{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:0;font-size:13px;border-bottom:1px solid rgba(255,255,255,.08)}
+.gap-table .row{display:grid;grid-template-columns:1.3fr 1fr 1fr;font-size:13px;border-bottom:1px solid rgba(255,255,255,.08)}
 .gap-table .row:last-child{border-bottom:0}
 .gap-table .row.h{background:rgba(255,255,255,.06);font-weight:700}
 .gap-table .row>div{padding:13px 16px;color:var(--ink-5)}
@@ -238,17 +275,46 @@ section{padding:104px 0}
 .app-card h4{font-size:16px;margin-bottom:7px}
 .app-card p{font-size:13px;color:var(--ink-4);line-height:1.55}
 
-/* CTA */
-.cta{background:var(--ink-1);color:#fff;position:relative;overflow:hidden}
-.cta::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 30%,rgba(0,145,211,.22),transparent 46%),radial-gradient(circle at 82% 78%,rgba(14,124,134,.16),transparent 42%)}
-.cta-inner{position:relative;z-index:2;text-align:center;max-width:720px;margin:0 auto}
-.cta h2{color:#fff;margin-bottom:16px}
-.cta p{color:var(--ink-5);font-size:16px;margin-bottom:30px}
-.cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+/* FAQ (benchmark: technical accordion) */
+.faq{background:#fff}
+.faq-wrap{max-width:860px;margin:0 auto}
+.faq-item{border:1px solid var(--line-1);border-radius:14px;margin-bottom:12px;overflow:hidden;background:var(--bg-2);transition:border-color .2s}
+.faq-item[open]{border-color:var(--brand-3);background:#fff;box-shadow:var(--s-2)}
+.faq-item summary{list-style:none;cursor:pointer;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-weight:600;font-size:16px;color:var(--ink-1)}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary .pl{flex-shrink:0;width:24px;height:24px;border-radius:7px;background:var(--brand-4);color:var(--brand-1);display:inline-flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;transition:transform .2s}
+.faq-item[open] summary .pl{transform:rotate(45deg)}
+.faq-item .a{padding:0 24px 22px;color:var(--ink-3);font-size:14.5px;line-height:1.72}
+.faq-item .a b{color:var(--ink-1)}
+
+/* INQUIRY form */
+.inquiry{background:var(--ink-1);color:#fff;position:relative;overflow:hidden}
+.inquiry::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 18% 24%,rgba(0,145,211,.2),transparent 46%),radial-gradient(circle at 84% 80%,rgba(14,124,134,.16),transparent 42%)}
+.inquiry-inner{position:relative;z-index:2;display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.inquiry h2{color:#fff;margin-bottom:16px}
+.inquiry .lead{color:var(--ink-5);margin-bottom:26px}
+.inquiry .contact-list{display:flex;flex-direction:column;gap:14px;margin-top:8px}
+.inquiry .cl{display:flex;gap:14px;align-items:center}
+.inquiry .cl .ico{width:42px;height:42px;border-radius:11px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);display:inline-flex;align-items:center;justify-content:center;color:var(--brand-3);flex-shrink:0}
+.inquiry .cl .ico svg{width:20px;height:20px}
+.inquiry .cl .k{font-size:12px;color:var(--ink-4)}
+.inquiry .cl .v{font-size:15.5px;color:#fff;font-weight:600}
+.form{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:28px}
+.form .row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.form label{display:block;font-size:12.5px;color:var(--ink-5);font-weight:600;margin-bottom:6px}
+.form input,.form select,.form textarea{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:12px 14px;color:#fff;font:inherit;font-size:14px;transition:border-color .18s,background .18s}
+.form input::placeholder,.form textarea::placeholder{color:var(--ink-4)}
+.form input:focus,.form select:focus,.form textarea:focus{outline:none;border-color:var(--brand-2);background:rgba(255,255,255,.1)}
+.form select option{color:#0B1120}
+.form textarea{resize:vertical;min-height:88px}
+.form .full{margin-bottom:14px}
+.form .submit{width:100%;background:var(--brand-1);color:#fff;padding:15px;border-radius:12px;font-weight:700;font-size:15px;transition:background .18s,transform .18s}
+.form .submit:hover{background:var(--brand-2);transform:translateY(-1px)}
+.form .hint{font-size:11.5px;color:var(--ink-4);margin-top:12px;text-align:center;line-height:1.5}
 
 /* footer */
-.footer{background:#070C16;color:var(--ink-5);padding:64px 0 32px}
-.footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.08)}
+.footer{background:#070C16;color:var(--ink-5);padding:60px 0 30px}
+.footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.08)}
 .footer .brand-txt .n{color:#fff}.footer .brand-txt .n b{color:var(--brand-3)}
 .footer .desc{margin-top:16px;font-size:13.5px;line-height:1.7;max-width:380px}
 .footer h5{color:#fff;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:16px}
@@ -258,32 +324,37 @@ section{padding:104px 0}
 .footer .contact li{display:flex;gap:8px}
 .footer .contact .k{color:var(--ink-4);min-width:44px}
 .footer .contact .v{color:#fff}
-.footer-bottom{padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--ink-4)}
+.footer-bottom{padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--ink-4)}
 .footer-bottom .copyright-note{max-width:640px;line-height:1.6}
 
 @media(max-width:1080px){
-  .hero-inner{grid-template-columns:1fr;gap:48px}
+  .hero-inner{grid-template-columns:1fr;gap:44px}
   .hero-visual{max-width:520px}
-  .strong-grid,.insight-inner{grid-template-columns:1fr;gap:32px}
+  .strong-grid,.insight-inner,.inquiry-inner{grid-template-columns:1fr;gap:32px}
   .types-grid{grid-template-columns:repeat(3,1fr)}
   .flow-steps{grid-template-columns:repeat(3,1fr)}
-  .lineup-grid{grid-template-columns:repeat(2,1fr)}
+  .spec-grid,.comp-grid{grid-template-columns:1fr}
+  .comp-grid{grid-template-columns:repeat(3,1fr)}
+  .res-grid{grid-template-columns:repeat(2,1fr)}
   .apps-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:768px){
   .axes-grid{grid-template-columns:1fr}
+  .comp-grid{grid-template-columns:1fr}
   .hero-metrics .n{font-size:25px}
-  .insight-card{padding:38px 26px}
+  .insight-card{padding:36px 24px}
+  .form .row{grid-template-columns:1fr}
 }
 @media(max-width:600px){
   .types-grid{grid-template-columns:1fr 1fr}
   .flow-steps{grid-template-columns:1fr 1fr}
-  .lineup-grid,.apps-grid{grid-template-columns:1fr}
-  .hero{padding:56px 0 68px}
+  .res-grid,.apps-grid{grid-template-columns:1fr}
+  .hero{padding:48px 0 60px}
   .hero-metrics{grid-template-columns:1fr;gap:14px}
   .hero-metrics .m+.m{padding-left:0;border-left:0;border-top:1px solid var(--line-1);padding-top:14px}
-  .gap-table .row{grid-template-columns:1fr;text-align:left}
+  .gap-table .row{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr;gap:28px}
+  .spec-tbl th,.spec-tbl td{padding:11px 18px}
 }
 </style>
 </head>
@@ -301,17 +372,33 @@ section{padding:104px 0}
       <ul>
         <li><a href="#sterility">무균시험</a></li>
         <li><a href="#canister">캐니스터</a></li>
-        <li><a href="#lineup">제품</a></li>
-        <li><a href="#insight">기술자료</a></li>
+        <li><a href="#specs">사양</a></li>
+        <li><a href="#compliance">규격</a></li>
+        <li><a href="#faq">FAQ</a></li>
         <li><a href="#about">회사소개</a></li>
       </ul>
     </nav>
-    <a class="h-cta" href="#contact">제품 문의</a>
+    <a class="h-cta" href="#inquiry">제품 문의</a>
     <button class="menu-btn" id="mbtn" aria-label="메뉴" aria-expanded="false" onclick="toggleMenu()">
       <svg viewBox="0 0 24 24"><line class="line top" x1="4" y1="7" x2="20" y2="7"/><line class="line mid" x1="4" y1="12" x2="20" y2="12"/><line class="line bot" x1="4" y1="17" x2="20" y2="17"/></svg>
     </button>
   </div>
 </header>
+
+<div class="subnav" id="subnav">
+  <div class="wrap subnav-inner">
+    <a href="#overview">개요</a>
+    <a href="#sterility">솔루션</a>
+    <a href="#canister">캐니스터</a>
+    <a href="#strong">SM86</a>
+    <a href="#specs">사양</a>
+    <a href="#compliance">규격 준수</a>
+    <a href="#resources">기술 자료</a>
+    <a href="#faq">FAQ</a>
+    <a href="#inquiry" class="sub-cta">제품 문의 →</a>
+  </div>
+</div>
+
 <div class="drawer-backdrop" id="mbd" onclick="toggleMenu()"></div>
 <aside class="mobile-drawer" id="mdrw" aria-label="모바일 메뉴">
   <div class="mobile-drawer-head">
@@ -320,24 +407,26 @@ section{padding:104px 0}
   </div>
   <a href="#sterility" onclick="toggleMenu()">무균시험<span class="d">Sterility Test 워크플로우</span></a>
   <a href="#canister" onclick="toggleMenu()">밀폐 캐니스터<span class="d">시료 유형별 NS01 시리즈</span></a>
-  <a href="#lineup" onclick="toggleMenu()">제품 라인업<span class="d">캐니스터 · 막여과 · 배지분주 외</span></a>
-  <a href="#insight" onclick="toggleMenu()">기술자료<span class="d">약전별 무균시험 비교</span></a>
+  <a href="#specs" onclick="toggleMenu()">기술 사양<span class="d">SM86 · 캐니스터 스펙</span></a>
+  <a href="#compliance" onclick="toggleMenu()">규격 준수<span class="d">KP · USP · EP · JP</span></a>
+  <a href="#resources" onclick="toggleMenu()">기술 자료<span class="d">MDS · CoQ · IOQ 문서</span></a>
+  <a href="#faq" onclick="toggleMenu()">자주 묻는 질문</a>
   <a href="#about" onclick="toggleMenu()">회사소개<span class="d">GEEVO · 국내 공급</span></a>
-  <a href="#contact" class="m-cta" onclick="toggleMenu()">제품 문의</a>
+  <a href="#inquiry" class="m-cta" onclick="toggleMenu()">제품 문의</a>
 </aside>
 
 <main id="top">
 
 <!-- HERO -->
-<section class="hero" style="padding-top:72px">
+<section class="hero">
   <div class="wrap hero-inner">
     <div class="hero-copy">
-      <span class="hero-badge"><span class="dot"></span>KP · USP · EP · JP 규격</span>
+      <span class="hero-badge"><span class="dot"></span>KP · USP · EP · JP 규격 · 멤브레인 여과법</span>
       <h1 class="h-display">무균시험(Sterility Test),<br><span class="grad">시료 유형별 밀폐 캐니스터.</span></h1>
       <p class="lead">GEEVO 밀폐 캐니스터와 SM86 무균시험 시스템은 시료 이송·여과·배양을 밀폐 상태에서 수행합니다. 감마선 이중포장, IOQ 밸리데이션 문서, 시험 데이터 라벨 프린트까지 한 라인에서 공급합니다.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="#contact">제품 문의</a>
-        <a class="btn btn-ghost" href="#canister">캐니스터 살펴보기</a>
+        <a class="btn btn-primary" href="#inquiry">제품 문의</a>
+        <a class="btn btn-ghost" href="#specs">기술 사양 보기</a>
       </div>
       <div class="hero-metrics">
         <div class="m"><div class="n">5<span class="u">가지</span></div><div class="l">시료 유형별 모델</div></div>
@@ -358,6 +447,17 @@ section{padding:104px 0}
   </div>
 </section>
 
+<!-- OVERVIEW / authority intro -->
+<div class="overview" id="overview">
+  <div class="wrap overview-inner">
+    <span class="eyebrow center" style="margin-bottom:20px">Overview</span>
+    <p>무균시험은 무균 제품을 출하하기 전 살아있는 미생물의 부재를 확인하는 필수 품질관리 과정입니다. <b>멤브레인 여과법</b>은 항균 성분을 함유한 제품에도 적용할 수 있어 약전이 선호하는 방식으로, GEEVO 밀폐 캐니스터와 SM86 시스템은 <b>주사제·수액·동결건조 분말·앰플·프리필드 시린지·멸균 의료기기</b> 등 다양한 제형의 무균시험을 밀폐 상태에서 수행합니다.</p>
+    <div class="forms">
+      <span>대용량 주사제(LVP)</span><span>바이알 분말</span><span>소프트 파우치</span><span>앰플 액상</span><span>난용성 분말</span><span>멸균 의료기기</span><span>프리필드 시린지</span>
+    </div>
+  </div>
+</div>
+
 <!-- REGULATORY -->
 <div class="reg">
   <div class="wrap">
@@ -376,7 +476,7 @@ section{padding:104px 0}
 <section class="axes" id="sterility">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">무엇을 하는가</span>
+      <span class="eyebrow center">솔루션</span>
       <h2 class="h-section">미생물 검사와 밀폐 이송, 두 축</h2>
       <p class="lead">GEEVO는 미생물 검사(Microbiology test)와 물질 밀폐 이송(Material containment transfer) 솔루션을 제조합니다. 국내는 무균시험 라인을 중심으로 공급합니다.</p>
     </div>
@@ -405,7 +505,7 @@ section{padding:104px 0}
 <section class="flow">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">무균시험 워크플로우</span>
+      <span class="eyebrow center">무균시험 워크플로우</span>
       <h2 class="h-section">밀폐 상태로 이송 · 여과 · 배양</h2>
       <p class="lead">시료의 이송, 여과, 배양이 밀폐 캐니스터 안에서 이루어져 시험 중 외부 오염 경로를 차단합니다.</p>
     </div>
@@ -424,7 +524,7 @@ section{padding:104px 0}
 <section class="types" id="canister">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">밀폐 캐니스터 · NS01 시리즈</span>
+      <span class="eyebrow center">밀폐 캐니스터 · NS01 시리즈</span>
       <h2 class="h-section">시료 유형이 모델을 결정합니다</h2>
       <p class="lead">캐니스터 바디 구수 뒷자리 2는 호기·혐기 배지 2종에 대응하는 약전 표준 구성입니다.</p>
     </div>
@@ -439,19 +539,19 @@ section{padding:104px 0}
 </section>
 
 <!-- STRENGTHS (dark) -->
-<section class="strong">
+<section class="strong" id="strong">
   <div class="wrap strong-inner">
     <div class="section-head">
-      <span class="eyebrow on-dark">SM86 무균시험 시스템</span>
+      <span class="eyebrow on-dark center">SM86 무균시험 시스템</span>
       <h2 class="h-section">데이터 무결성과 작업자 편차 관리</h2>
-      <p class="lead">610×380×420mm · 14.8kg · 120W · 최대 240rpm · 7인치 터치스크린. 304 스테인리스 경면 연마.</p>
+      <p class="lead">전체 경면 연마 304 스테인리스 · 7인치 정전식 터치스크린 · 프로그램/직접 조작 2모드.</p>
     </div>
     <div class="strong-grid">
       <div class="strong-list">
         <div class="strong-item"><div class="num">01</div><div><h4>라벨 프린트 연동</h4><p>시험 정보를 스티커(50×25mm)에 인쇄해 캐니스터에 직접 부착합니다. 손글씨 표기를 대체해 시험 데이터 표기를 표준화합니다.</p></div></div>
         <div class="strong-item"><div class="num">02</div><div><h4>SOP 50건 사전 저장</h4><p>시료별 표준작업절차를 50건까지 저장하고, 각 단계를 화면이 안내합니다. 작업자 간 편차를 줄입니다.</p></div></div>
         <div class="strong-item"><div class="num">03</div><div><h4>감마선 이중포장 · 음압</h4><p>감마선 멸균 이중포장에 일정 음압을 포함하고, 세트 내부와 박스 외부에 멸균 인디케이터 카드가 있습니다.</p></div></div>
-        <div class="strong-item"><div class="num">04</div><div><h4>IOQ 밸리데이션 문서</h4><p>ChP2020·USP43·EP10.0·TGA2006·ASTM F838-2015를 참조한 밸리데이션 문서를 원본으로 제공합니다.</p></div></div>
+        <div class="strong-item"><div class="num">04</div><div><h4>IOQ 밸리데이션 문서</h4><p>USP·EP·ASTM F838-2015 등을 참조한 밸리데이션 문서를 원본으로 제공합니다.</p></div></div>
       </div>
       <div class="strong-photo">
         <img src="/images/canister.jpg" alt="GEEVO 밀폐 캐니스터 세트 — 이중포장·2구 바디·연동 튜브">
@@ -461,57 +561,75 @@ section{padding:104px 0}
   </div>
 </section>
 
-<!-- LINEUP -->
-<section class="lineup" id="lineup">
+<!-- SPECIFICATIONS -->
+<section class="specs" id="specs">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">제품 라인업</span>
-      <h2 class="h-section">무균시험부터 미생물한도시험까지</h2>
-      <p class="lead">이미 무균시험으로 연결된 QC 실험실에 막여과·배지 분주·아이솔레이터까지 같은 라인에서 제안합니다.</p>
+      <span class="eyebrow center">기술 사양</span>
+      <h2 class="h-section">Specifications</h2>
+      <p class="lead">SM86 무균시험 시스템과 밀폐 캐니스터 NS01-A2의 실측 사양입니다.</p>
     </div>
-    <div class="lineup-grid">
-      <div class="line-card feat">
-        <div class="k">Sterility Test</div>
-        <h3>밀폐 캐니스터 · SM86</h3>
-        <p>NS01 시리즈 밀폐 캐니스터와 SM86 무균시험 시스템. 아이솔레이터 내장형 STERT86과 전용 팔레트(PALLET-10/20) 포함.</p>
-        <ul><li>NS01 시료 유형별 5종</li><li>SM86 · STERT86</li><li>PALLET-10 / PALLET-20</li></ul>
+    <div class="spec-grid">
+      <div class="spec-card">
+        <div class="sh"><h3>SM86 무균시험 시스템</h3><span class="tag">Instrument</span></div>
+        <table class="spec-tbl">
+          <tr><th>펌프 본체 크기 (W×D×H)</th><td>610 × 380 × 420 mm</td></tr>
+          <tr><th>중량</th><td>14.8 kg</td></tr>
+          <tr><th>전원</th><td>220V / 110V ±10%, 50/60Hz</td></tr>
+          <tr><th>소비 전력</th><td>120 W</td></tr>
+          <tr><th>회전 속도</th><td>최대 240 rpm</td></tr>
+          <tr><th>SOP 사전 저장</th><td>50건</td></tr>
+          <tr><th>터치스크린</th><td>7인치 정전식</td></tr>
+          <tr><th>하우징</th><td>304 스테인리스 경면 연마</td></tr>
+          <tr><th>드레인 트레이 지지</th><td>316L 스테인리스 / 컨테이너 PPSU</td></tr>
+          <tr><th>라벨 프린터 용지</th><td>50 × 25 mm</td></tr>
+          <tr><th>조작 언어</th><td>중국어 · 영어</td></tr>
+          <tr><th>보증</th><td>판매일로부터 1년</td></tr>
+        </table>
       </div>
-      <div class="line-card">
-        <div class="k">Isolator</div>
-        <h3>무균시험 아이솔레이터</h3>
-        <p>하드월 구조 · 동적 Class A · HEPA 급배기 · 과산화수소 멸균(포자 6-log) · PLC 압력·풍속 감시.</p>
-        <ul><li>SV 아이솔레이터</li><li>RTP 급속 이송 포트</li><li>H₂O₂ 멸균기 SV-06 / 08</li></ul>
+      <div class="spec-card">
+        <div class="sh"><h3>밀폐 캐니스터 NS01-A2</h3><span class="tag">Consumable</span></div>
+        <table class="spec-tbl">
+          <tr><th>필터 멤브레인</th><td>0.45 µm 나일론 개질 멤브레인</td></tr>
+          <tr><th>여과 면적</th><td>14.7 cm²</td></tr>
+          <tr><th>에어 필터</th><td>0.22 µm PVDF</td></tr>
+          <tr><th>바디 / 튜브 재질</th><td>AS / PVC</td></tr>
+          <tr><th>니들</th><td>의료용 316L 스테인리스 2-니들 세트</td></tr>
+          <tr><th>시료 용기 용량</th><td>120 ml (50 · 100 ml 눈금)</td></tr>
+          <tr><th>튜브 길이</th><td>140 cm</td></tr>
+          <tr><th>최대 작동 압력</th><td>3 bar (0.3 MPa)</td></tr>
+          <tr><th>최대 작동 온도</th><td>60 ℃</td></tr>
+          <tr><th>멸균</th><td>감마선 (Gamma)</td></tr>
+          <tr><th>포장</th><td>이중 포장 (음압 포함) · 멸균 인디케이터 카드</td></tr>
+          <tr><th>적용 시료</th><td>바이알 동결건조 분말 · 바이알 액상</td></tr>
+        </table>
       </div>
-      <div class="line-card">
-        <div class="k">Membrane Filtration</div>
-        <h3>미생물한도시험 막여과</h3>
-        <p>구수별 C 시리즈, 흡인병 없는 일체형 Q3-40(신제품), 매니폴드 CF 시리즈. 정제수·원료·완제 미생물한도시험용.</p>
-        <ul><li>C1 · C2 · C3 · C6</li><li>Q3-40 일체형 (2025 신제품)</li><li>CF3 · CF6 매니폴드</li></ul>
-      </div>
-      <div class="line-card">
-        <div class="k">Consumables</div>
-        <h3>멤브레인 · 소모품</h3>
-        <p>MCE 멤브레인(0.22/0.45µm), PP·스테인리스 퍼널, 화염멸균건 SG51(1200℃), 무오일 진공펌프 MDP15.</p>
-        <ul><li>MCE 멤브레인 (그리드형 포함)</li><li>PP40 · SS 퍼널</li><li>SG40/SG51 · MDP15</li></ul>
-      </div>
-      <div class="line-card">
-        <div class="k">Media Dispensing</div>
-        <h3>배지 분주 시스템</h3>
-        <p>완제 배지의 6개월 유효기간·콜드체인 부담을 자체 조제로 해소. 분주량 1~1000ml, 정밀도 1% 미만.</p>
-        <ul><li>AMD280 (280장/30분 미만)</li><li>AMD110 (라미나 캐비닛 대응)</li><li>HMD1 반자동</li></ul>
-      </div>
-      <div class="line-card">
-        <div class="k">Containment</div>
-        <h3>분체 밀폐 이송 (SBV)</h3>
-        <p>액티브·패시브 밸브의 분체 밀폐 이송. OEL 0.1µg/m³ 미만·OEB 5 등급(CIP/SIP형). 316L 바디.</p>
-        <ul><li>Conventional · Pneumatic</li><li>Clean/Sterilization in Place</li><li>RTP 급속 이송 포트</li></ul>
-      </div>
+    </div>
+    <p class="spec-note">※ NS01-A2 기준. 다른 시료 유형 모델의 사양은 문의 시 안내합니다.</p>
+  </div>
+</section>
+
+<!-- COMPLIANCE -->
+<section class="compliance" id="compliance">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow center">규격 준수</span>
+      <h2 class="h-section">Compliance &amp; Standards</h2>
+      <p class="lead">무균시험·멤브레인 여과·아이솔레이터 밸리데이션 관련 규격에 대응합니다.</p>
+    </div>
+    <div class="comp-grid">
+      <div class="comp-card"><div class="std">KP · USP &lt;71&gt; · EP 2.6.1 · JP 4.06</div><p>무균시험법. 4개 약전의 무균시험법은 시험 절차·핵심 파라미터 비교 결과 동등한 것으로 평가됩니다.</p></div>
+      <div class="comp-card"><div class="std">USP &lt;1208&gt;</div><p>아이솔레이터 시스템을 이용한 무균시험의 밸리데이션 기준.</p></div>
+      <div class="comp-card"><div class="std">ASTM F838-2015</div><p>액체 여과용 멤브레인 필터의 세균 저지(Bacterial Retention) 시험 표준.</p></div>
+      <div class="comp-card"><div class="std">PDA TR 34</div><p>아이솔레이터 시스템의 설계·밸리데이션 기술 보고서.</p></div>
+      <div class="comp-card"><div class="std">IOQ 밸리데이션 문서</div><p>SM86 무균시험 시스템의 설치·운전 밸리데이션 문서를 원본으로 제공합니다.</p></div>
+      <div class="comp-card"><div class="std">MDS · CoQ (Lot별)</div><p>캐니스터 Material Data Sheet와 Lot별 Certificate of Quality를 동봉합니다.</p></div>
     </div>
   </div>
 </section>
 
 <!-- INSIGHT -->
-<section class="insight" id="insight">
+<section class="insight">
   <div class="wrap">
     <div class="insight-card">
       <div class="insight-inner">
@@ -532,11 +650,28 @@ section{padding:104px 0}
   </div>
 </section>
 
+<!-- RESOURCES -->
+<section class="res" id="resources">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow center">기술 자료</span>
+      <h2 class="h-section">Documents &amp; Resources</h2>
+      <p class="lead">밸리데이션·품질·사용 문서를 제공합니다. 아래 자료는 제품 문의 시 안내합니다.</p>
+    </div>
+    <div class="res-grid">
+      <div class="res-card"><span class="kind">Validation</span><h4>IOQ 밸리데이션 문서</h4><p>SM86 무균시험 시스템 설치·운전 밸리데이션 문서 (USP·EP·ASTM F838 참조).</p><span class="avail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>문의 시 제공</span></div>
+      <div class="res-card"><span class="kind">Data Sheet</span><h4>Material Data Sheet</h4><p>밀폐 캐니스터 NS01 시리즈 재질·사양·성장촉진시험 균주 정보.</p><span class="avail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>문의 시 제공</span></div>
+      <div class="res-card"><span class="kind">Certificate</span><h4>Certificate of Quality</h4><p>Lot별 품질 성적서 (유량·내압·내온·세균 저지·감도 시험).</p><span class="avail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Lot별 동봉</span></div>
+      <div class="res-card"><span class="kind">User Guide</span><h4>SM86 사용 설명서</h4><p>설치·조작·유지보수·트러블슈팅을 포함한 사용 가이드.</p><span class="avail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>제품 동봉</span></div>
+    </div>
+  </div>
+</section>
+
 <!-- APPLICATIONS -->
 <section class="apps">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">적용 분야</span>
+      <span class="eyebrow center">적용 분야</span>
       <h2 class="h-section">어디에 쓰이는가</h2>
     </div>
     <div class="apps-grid">
@@ -548,16 +683,56 @@ section{padding:104px 0}
   </div>
 </section>
 
-<!-- CTA -->
-<section class="cta" id="contact">
-  <div class="wrap cta-inner">
-    <span class="eyebrow on-dark" style="justify-content:center">제품 문의</span>
-    <h2 class="h-section">시료 유형과 시험 방식을 알려주시면 회신드립니다</h2>
-    <p>보유 장비·시험 대상 제형·필요 수량을 남겨주시면 캐니스터 모델과 견적을 안내합니다.</p>
-    <div class="cta-btns">
-      <a class="btn btn-white" href="mailto:global3766@naver.com?subject=GEEVO%20무균시험%20제품%20문의">이메일 문의</a>
-      <a class="btn btn-outline-w" href="tel:024064387">02-406-4387</a>
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow center">자주 묻는 질문</span>
+      <h2 class="h-section">FAQ</h2>
     </div>
+    <div class="faq-wrap">
+      <details class="faq-item"><summary>무균시험이란 무엇입니까?<span class="pl">+</span></summary><div class="a">무균 상태(모든 산세포·포자·복제 가능한 바이러스의 부재)를 확인하는 시험입니다. 증식 가능한 배지·환경에 시료를 접종해도 미생물이 나타나지 않아야 하며, 무균 제품 출하 전 필수 품질관리 과정입니다.</div></details>
+      <details class="faq-item"><summary>멤브레인 여과법의 장점은 무엇입니까?<span class="pl">+</span></summary><div class="a">여과 후 세척으로 시료의 <b>항균 성분(정균 물질)</b>을 제거할 수 있고 채취량을 늘릴 수 있어, 항생제 등 미생물 성장 억제 성분이 있는 제품에도 적용됩니다. 이 때문에 약전이 선호하는 방식입니다.</div></details>
+      <details class="faq-item"><summary>시료 유형에 따라 어떤 캐니스터를 선택합니까?<span class="pl">+</span></summary><div class="a">병 주사제는 NS01-2/3, 바이알 분말은 NS01-A2/A3, 소프트 파우치는 NS01-CH2/CH3, 앰플 액상은 NS01-C2/C3, 난용성 분말은 NS01-AS2/AS3를 사용합니다. 뒷자리 숫자는 캐니스터 바디 구수로, 호기·혐기 배지 2종에는 2구가 표준입니다.</div></details>
+      <details class="faq-item"><summary>멤브레인 공경과 재질은 어떻게 됩니까?<span class="pl">+</span></summary><div class="a">NS01-A2 기준 0.45 µm 나일론 개질 멤브레인이며 여과 면적은 14.7 cm²입니다. 에어 필터는 0.22 µm PVDF, 니들은 의료용 316L 스테인리스 2세트입니다.</div></details>
+      <details class="faq-item"><summary>멸균 방식은 무엇을 선택할 수 있습니까?<span class="pl">+</span></summary><div class="a">EO 멸균(블리스터 단포장)과 감마선 멸균(이중포장)이 있습니다. NS01-A2는 감마선입니다. 감마선 이중포장은 EO 잔류 문제가 없어, EO 잔류가 우려되는 경우 권장드립니다.</div></details>
+      <details class="faq-item"><summary>KP(대한민국약전)에 대응됩니까?<span class="pl">+</span></summary><div class="a">GEEVO 무균시험 시스템은 USP·EP·JP 요건을 충족하며, 4개 약전의 무균시험법은 동등한 것으로 평가됩니다. KP는 이들 약전과 조화되어 있어 동일 절차로 적용됩니다.</div></details>
+      <details class="faq-item"><summary>밸리데이션 문서(IOQ)를 제공합니까?<span class="pl">+</span></summary><div class="a">제공합니다. USP·EP·ASTM F838-2015 등을 참조한 무균시험 시스템 밸리데이션 문서를 원본으로 전달합니다. 캐니스터는 Material Data Sheet와 Lot별 Certificate of Quality를 동봉합니다.</div></details>
+      <details class="faq-item"><summary>시험 데이터 기록은 어떻게 관리됩니까?<span class="pl">+</span></summary><div class="a">SM86는 프린터를 연결하면 시험 정보를 스티커(50×25mm)에 인쇄해 캐니스터에 직접 부착합니다. 손글씨 표기를 대체해 데이터 표기를 표준화하며, SOP를 50건까지 저장해 작업자 간 편차를 줄입니다.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- INQUIRY -->
+<section class="inquiry" id="inquiry">
+  <div class="wrap inquiry-inner">
+    <div>
+      <span class="eyebrow on-dark">제품 문의</span>
+      <h2 class="h-section">전문가에게 문의하세요</h2>
+      <p class="lead">보유 장비·시험 대상 제형·필요 수량을 알려주시면 캐니스터 모델과 견적을 안내합니다.</p>
+      <div class="contact-list">
+        <div class="cl"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z"/></svg></span><div><div class="k">전화</div><div class="v">02-406-4387</div></div></div>
+        <div class="cl"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><div><div class="k">이메일</div><div class="v">global3766@naver.com</div></div></div>
+        <div class="cl"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H5.2L4 17.2V4z"/></svg></span><div><div class="k">국내 공급</div><div class="v">글로벌트레이딩</div></div></div>
+      </div>
+    </div>
+    <form class="form" onsubmit="return sendInquiry(event)">
+      <div class="row">
+        <div><label>이름 *</label><input id="f-name" required placeholder="담당자 성함"></div>
+        <div><label>회사 / 기관 *</label><input id="f-org" required placeholder="회사명"></div>
+      </div>
+      <div class="row">
+        <div><label>이메일 *</label><input id="f-email" type="email" required placeholder="name@company.com"></div>
+        <div><label>연락처</label><input id="f-tel" placeholder="010-0000-0000"></div>
+      </div>
+      <div class="row">
+        <div><label>시험 대상 제형</label><select id="f-form"><option value="">선택</option><option>병 주사제 (LVP)</option><option>바이알 분말</option><option>소프트 파우치</option><option>앰플 액상</option><option>난용성 분말</option><option>멸균 의료기기</option><option>프리필드 시린지</option><option>기타</option></select></div>
+        <div><label>관심 품목</label><select id="f-item"><option value="">선택</option><option>밀폐 캐니스터 (NS01)</option><option>SM86 무균시험 시스템</option><option>무균시험 아이솔레이터</option><option>막여과 시스템</option><option>배지 분주 시스템</option><option>기타</option></select></div>
+      </div>
+      <div class="full"><label>문의 내용</label><textarea id="f-msg" placeholder="필요 수량·보유 장비·일정 등을 남겨주세요."></textarea></div>
+      <button type="submit" class="submit">문의 보내기 →</button>
+      <p class="hint">버튼을 누르면 메일 앱으로 문의 내용이 정리되어 열립니다. 전화 문의도 환영합니다.</p>
+    </form>
   </div>
 </section>
 
@@ -575,9 +750,9 @@ section{padding:104px 0}
         <h5>제품</h5>
         <ul>
           <li><a href="#canister">밀폐 캐니스터 NS01</a></li>
-          <li><a href="#lineup">SM86 무균시험 시스템</a></li>
-          <li><a href="#lineup">무균시험 아이솔레이터</a></li>
-          <li><a href="#lineup">막여과 · 배지 분주</a></li>
+          <li><a href="#strong">SM86 무균시험 시스템</a></li>
+          <li><a href="#specs">기술 사양</a></li>
+          <li><a href="#compliance">규격 준수</a></li>
         </ul>
       </div>
       <div>
@@ -604,6 +779,23 @@ function toggleMenu(){
   b.setAttribute('aria-expanded',open);document.body.style.overflow=open?'hidden':'';
 }
 addEventListener('scroll',function(){document.getElementById('hdr').classList.toggle('scrolled',scrollY>8)},{passive:true});
+// subnav active state
+var subLinks=[].slice.call(document.querySelectorAll('.subnav a[href^="#"]'));
+var secs=subLinks.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))}).filter(Boolean);
+addEventListener('scroll',function(){
+  var y=scrollY+150,cur=null;
+  secs.forEach(function(s){if(s.offsetTop<=y)cur=s.id});
+  subLinks.forEach(function(a){a.classList.toggle('active',a.getAttribute('href')==='#'+cur)});
+},{passive:true});
+// inquiry -> mailto builder (no backend needed)
+function sendInquiry(e){
+  e.preventDefault();
+  var g=function(id){return (document.getElementById(id).value||'').trim()};
+  var subject='[GEEVO 무균시험 문의] '+(g('f-org')||'')+' '+(g('f-name')||'');
+  var body=['이름: '+g('f-name'),'회사/기관: '+g('f-org'),'이메일: '+g('f-email'),'연락처: '+g('f-tel'),'시험 대상 제형: '+g('f-form'),'관심 품목: '+g('f-item'),'','문의 내용:',g('f-msg')].join('\n');
+  window.location.href='mailto:global3766@naver.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+  return false;
+}
 </script>
 </body>
 </html>
